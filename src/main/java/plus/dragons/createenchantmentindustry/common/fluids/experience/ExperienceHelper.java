@@ -42,16 +42,16 @@ public class ExperienceHelper {
         if (level == 0)
             return 0;
         if (level >= 31)
-            return (9 * level * level - 325 * level) / 2 + 2220;
+            return (int) Math.max(0L, Math.min((9L * level * level - 325L * level) / 2 + 2220, Integer.MAX_VALUE));
         if (level >= 16)
             return (5 * level * level - 81 * level) / 2 + 360;
         return level * level + 6 * level;
     }
 
     public static int getExperienceForPlayer(Player player) {
-        int experience = getExperienceForTotalLevel(player.experienceLevel);
+        long experience = getExperienceForTotalLevel(player.experienceLevel);
         experience += Math.round(player.experienceProgress * getExperienceForNextLevel(player.experienceLevel));
-        return experience;
+        return (int) Math.max(0L, Math.min(experience, Integer.MAX_VALUE));
     }
 
     public static int getExperienceFromFluid(FluidStack fluid) {

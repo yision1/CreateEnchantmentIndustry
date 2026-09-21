@@ -1,8 +1,9 @@
-## Create: Enchantment Industry 2.5.2 for Minecraft 1.20.1
+> **Requires Create: Dragons Plus 1.11.9 or newer within the 1.11.x series.**
+
+## Create: Enchantment Industry 2.5.4 for Minecraft 1.20.1
 
 ### Added
-* Added a complete three-part Ponder tutorial for the Blaze Composer, covering normal composing, Super Composing, and Mechanical Arm automation.
-* Added Simplified Chinese translations for the new Blaze Composer tutorial scenes.
+* Grouped Experience Nuggets, Experience Buckets, and Blocks of Experience into a single Ponder card, with the full experience tutorials available from each item.
 
 ### Fixed
-* Fixed opening the Experience Lantern Ponder crashing while its scene was loading ([#483](https://github.com/DragonsPlusMinecraft/CreateEnchantmentIndustry/issues/483)).
+* Fixed the Experience Hatch failing to deposit experience at very high player levels ([#509](https://github.com/DragonsPlusMinecraft/CreateEnchantmentIndustry/issues/509)).
